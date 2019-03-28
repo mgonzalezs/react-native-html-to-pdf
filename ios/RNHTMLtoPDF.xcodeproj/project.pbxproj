@@ -9,18 +9,7 @@
 /* Begin PBXBuildFile section */
 		117405F31B9954BF004425E1 /* RNHTMLtoPDF.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 117405F21B9954BF004425E1 /* RNHTMLtoPDF.h */; };
 		117405F51B9954BF004425E1 /* RNHTMLtoPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 117405F41B9954BF004425E1 /* RNHTMLtoPDF.m */; };
-		117405FB1B9954BF004425E1 /* libRNHTMLtoPDF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 117405EF1B9954BF004425E1 /* libRNHTMLtoPDF.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		117405FC1B9954BF004425E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 117405E71B9954BF004425E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 117405EE1B9954BF004425E1;
-			remoteInfo = RNHTMLtoPDF;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		117405ED1B9954BF004425E1 /* CopyFiles */ = {
@@ -39,8 +28,6 @@
 		117405EF1B9954BF004425E1 /* libRNHTMLtoPDF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNHTMLtoPDF.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		117405F21B9954BF004425E1 /* RNHTMLtoPDF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNHTMLtoPDF.h; sourceTree = "<group>"; };
 		117405F41B9954BF004425E1 /* RNHTMLtoPDF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNHTMLtoPDF.m; sourceTree = "<group>"; };
-		117405FA1B9954BF004425E1 /* RNHTMLtoPDFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNHTMLtoPDFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		117406001B9954BF004425E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,14 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		117405F71B9954BF004425E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				117405FB1B9954BF004425E1 /* libRNHTMLtoPDF.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				117405F11B9954BF004425E1 /* RNHTMLtoPDF */,
-				117405FE1B9954BF004425E1 /* RNHTMLtoPDFTests */,
 				117405F01B9954BF004425E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				117405EF1B9954BF004425E1 /* libRNHTMLtoPDF.a */,
-				117405FA1B9954BF004425E1 /* RNHTMLtoPDFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,22 +64,6 @@
 				117405F41B9954BF004425E1 /* RNHTMLtoPDF.m */,
 			);
 			path = RNHTMLtoPDF;
-			sourceTree = "<group>";
-		};
-		117405FE1B9954BF004425E1 /* RNHTMLtoPDFTests */ = {
-			isa = PBXGroup;
-			children = (
-				117405FF1B9954BF004425E1 /* Supporting Files */,
-			);
-			path = RNHTMLtoPDFTests;
-			sourceTree = "<group>";
-		};
-		117405FF1B9954BF004425E1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				117406001B9954BF004425E1 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,24 +86,6 @@
 			productReference = 117405EF1B9954BF004425E1 /* libRNHTMLtoPDF.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		117405F91B9954BF004425E1 /* RNHTMLtoPDFTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 117406061B9954BF004425E1 /* Build configuration list for PBXNativeTarget "RNHTMLtoPDFTests" */;
-			buildPhases = (
-				117405F61B9954BF004425E1 /* Sources */,
-				117405F71B9954BF004425E1 /* Frameworks */,
-				117405F81B9954BF004425E1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				117405FD1B9954BF004425E1 /* PBXTargetDependency */,
-			);
-			name = RNHTMLtoPDFTests;
-			productName = RNHTMLtoPDFTests;
-			productReference = 117405FA1B9954BF004425E1 /* RNHTMLtoPDFTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,9 +96,6 @@
 				ORGANIZATIONNAME = "Blick Labs";
 				TargetAttributes = {
 					117405EE1B9954BF004425E1 = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					117405F91B9954BF004425E1 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -173,20 +113,9 @@
 			projectRoot = "";
 			targets = (
 				117405EE1B9954BF004425E1 /* RNHTMLtoPDF */,
-				117405F91B9954BF004425E1 /* RNHTMLtoPDFTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		117405F81B9954BF004425E1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		117405EB1B9954BF004425E1 /* Sources */ = {
@@ -197,22 +126,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		117405F61B9954BF004425E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		117405FD1B9954BF004425E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 117405EE1B9954BF004425E1 /* RNHTMLtoPDF */;
-			targetProxy = 117405FC1B9954BF004425E1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		117406011B9954BF004425E1 /* Debug */ = {
@@ -323,38 +237,6 @@
 			};
 			name = Release;
 		};
-		117406071B9954BF004425E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNHTMLtoPDFTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		117406081B9954BF004425E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNHTMLtoPDFTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -374,14 +256,7 @@
 				117406051B9954BF004425E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		117406061B9954BF004425E1 /* Build configuration list for PBXNativeTarget "RNHTMLtoPDFTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				117406071B9954BF004425E1 /* Debug */,
-				117406081B9954BF004425E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

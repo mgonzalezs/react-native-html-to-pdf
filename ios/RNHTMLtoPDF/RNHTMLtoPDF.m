@@ -26,7 +26,7 @@
     {
         UIGraphicsBeginPDFPage();
 
-        UIColor *myColor = [UIColor colorWithRed: (246.0/255.0) green:(245.0/255.0) blue:(240.0/255.0) alpha:1];
+        UIColor *myColor = [UIColor colorWithRed: (255.0/255.0) green:(255.0/255.0) blue:(255.0/255.0) alpha:1];
         CGContextRef currentContext = UIGraphicsGetCurrentContext();
         CGContextSetFillColorWithColor(currentContext, myColor.CGColor);
         CGContextFillRect(currentContext, self.paperRect);
